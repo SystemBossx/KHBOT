@@ -76,7 +76,7 @@ if ($type == 'join' || $command == 'kaan') {
 
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == '/cuaca') {
+	    if ($command == '/hava') {
 
         $result = cuaca($options);
         $balas = array(
@@ -85,34 +85,6 @@ if($message['type']=='text') {
                 array(
                     'type' => 'text',
                     'text' => $result
-                )
-            )
-        );
-    }
-if($message['type']=='text') {
-	    if ($command == 'amk') {
-
-        $result = cuaca($options);
-        $balas = array(
-            'replyToken' => $replyToken,
-            'messages' => array(
-                array(
-                    'type' => 'text',
-                    'text' => 'KAAN HABIBI SIKER SEN IZLERSIN KÖPEK',
-                )
-            )
-        );
-    }
-	if($message['type']=='text') {
-	    if ($command == 'köpek') {
-
-        $result = cuaca($options);
-        $balas = array(
-            'replyToken' => $replyToken,
-            'messages' => array(
-                array(
-                    'type' => 'text',
-                    'text' => 'KAAN HABIBI SIKER SEN IZLERSIN KÖPEK 2',
                 )
             )
         );
