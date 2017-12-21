@@ -49,7 +49,7 @@ function cuaca($keyword) {
 	$result .= "\n\nSIMDI : ";
 	$result .= $json['weather']['0']['main'];
 	$result .= "\nKAAN HABIBO SIKIYOR KOS YETIS OROSBUNUN DOGURDUGU HAHAHAHHAA ";
-	$result .= "\n\n\n\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n";
+	$result .= "\n\n\n\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n";
 	$result .= $json['weather']['0']['description'];
     return $result;
 }
@@ -98,7 +98,6 @@ if($message['type']=='text') {
 								array(
 										'type' => 'text',									
 										'text' => 'KÖPEKLERIM STICKER ATMAZ, HAVLAR SENDE BASLA IT'										
-									        'text' => '\n\n\n\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n'
 									)
 							)
 						);
