@@ -1,6 +1,6 @@
 {
   "name": "KINGBOT",
   "description": "This is my bot ",
-  "repository": "hhttps://github.com/SystemBossx/KHBOT",
+  "repository": "https://github.com/SystemBossx/KHBOT",
   "keywords": ["line bot", "messaging api"]
 }
