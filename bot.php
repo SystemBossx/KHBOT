@@ -76,7 +76,7 @@ if ($type == 'join' || $command == 'kaan habibo') {
 
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'kaan') {
+	    if ($command == ' ') {
 
         $result = cuaca($options);
         $balas = array(
