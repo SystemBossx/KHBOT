@@ -43,12 +43,13 @@ function cuaca($keyword) {
     $response = Unirest\Request::get("$uri");
 
     $json = json_decode($response->raw_body, true);
-    $result = "Merhaba ";
+    $result = "PIC ";
 	$result .= $json['name'];
-	$result .= " SENIN ANINA";
+	$result .= " SENIN ANINI";
 	$result .= "\n\nSIMDI : ";
 	$result .= $json['weather']['0']['main'];
-	$result .= "\nKAAN HABIBO SIKIYOR KOS YETIS OROSBUNUN DOGURDUGU : ";
+	$result .= "\nKAAN HABIBO SIKIYOR KOS YETIS OROSBUNUN DOGURDUGU HAHAHAHHAA ";
+	$result .= "\n\n\n\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n";
 	$result .= $json['weather']['0']['description'];
     return $result;
 }
@@ -89,7 +90,7 @@ if($message['type']=='text') {
             )
         );
     }
-}else if ($type == 'join' || $command == 'türkiyem') {
+}else if ($message['type']=='text' || $command == 'türkiyem') {
     $text = "🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n
 TÜRKIYEM";
     $balas = array(
@@ -108,7 +109,7 @@ TÜRKIYEM";
 							'messages' => array(
 								array(
 										'type' => 'text',									
-										'text' => 'KÖPEGIM STICKER ATMA SEN HAVLA'										
+										'text' => 'KÖPEKLERIM STICKER ATMAZ, HAVLAR SENDE BASLA IT'										
 									
 									)
 							)
