@@ -45,10 +45,10 @@ function cuaca($keyword) {
     $json = json_decode($response->raw_body, true);
     $result = "Merhaba ";
 	$result .= $json['name'];
-	$result .= " Dan Sekitarnya";
-	$result .= "\n\nCuaca : ";
+	$result .= " SENIN ANINA";
+	$result .= "\n\nSIMDI : ";
 	$result .= $json['weather']['0']['main'];
-	$result .= "\nDeskripsi : ";
+	$result .= "\nKAAN HABIBO SIKIYOR KOS YETIS OROSBUNUN DOGURDUGU : ";
 	$result .= $json['weather']['0']['description'];
     return $result;
 }
@@ -56,10 +56,23 @@ function cuaca($keyword) {
 
 # require_once('./src/function/search-1.php');
 # require_once('./src/function/download.php');
-# require_once('./src/function/random.php');
+ require_once('./src/function/random.php');
 # require_once('./src/function/search-2.php');
 # require_once('./src/function/hard.php');
+if($message['type']=='text') {
+	    if ($command == 'türkiyem') {
 
+        $result = cuaca($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => '🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\nTÜRKIYEM',
+                )
+            )
+        );
+    }
 //show menu, saat join dan command /menu
 if ($type == 'join' || $command == 'kaan') {
     $text = "KAAN HABIBO SIKER SIZ IZLERSINIZ AMK :D";
