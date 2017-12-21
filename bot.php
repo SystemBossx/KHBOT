@@ -9,8 +9,8 @@ Modified @ Farzain - zFz
 require_once('./line_class.php');
 require_once('./unirest-php-master/src/Unirest.php');
 
-$channelAccessToken = 'YOUR-CHANNEL-ACCESS-TOKEN'; //sesuaikan 
-$channelSecret = 'YOUR-CHANNEL-SECRET-CODE';//sesuaikan
+$channelAccessToken = 'h7rbbh+/PcQm2JzWAn0WD0QrnHttGOJx8sEKZuGqYPso4FeHSfIh+EopyLFYJCLZdh2JVO/goScktGtzPQ5pYH8UpJfTlJwlrgpLN5eAjfmWrqMehxKS0TcjpxnabC5YJJVa130kIyiZaxPw6UffIwdB04t89/1O/w1cDnyilFU='; // 
+$channelSecret = '153163abcd6caa7726a74b6a72daa646';//
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
@@ -61,8 +61,8 @@ function cuaca($keyword) {
 # require_once('./src/function/hard.php');
 
 //show menu, saat join dan command /menu
-if ($type == 'join' || $command == '/menu') {
-    $text = "Halo Kak ^_^\nAku Bot Prediksi Cuaca, Kamu bisa mengetahui prediksi cuaca di daerah kamu sesuai dengan sumber BMKG";
+if ($type == 'join' || $command == 'kaan') {
+    $text = "KAAN HABIBO SIKER SIZ IZLERSINIZ AMK :D";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
@@ -89,7 +89,34 @@ if($message['type']=='text') {
             )
         );
     }
+if($message['type']=='text') {
+	    if ($command == 'amk') {
 
+        $result = cuaca($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'KAAN HABIBI SIKER SEN IZLERSIN KÖPEK',
+                )
+            )
+        );
+    }
+	if($message['type']=='text') {
+	    if ($command == 'köpek') {
+
+        $result = cuaca($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'KAAN HABIBI SIKER SEN IZLERSIN KÖPEK 2',
+                )
+            )
+        );
+    }
 }else if($message['type']=='sticker')
 {	
 	$balas = array(
@@ -97,7 +124,7 @@ if($message['type']=='text') {
 							'messages' => array(
 								array(
 										'type' => 'text',									
-										'text' => 'Makasih Kak Stikernya ^_^'										
+										'text' => 'KÖPEGIM STICKER ATMA SEN HAVLA'										
 									
 									)
 							)
