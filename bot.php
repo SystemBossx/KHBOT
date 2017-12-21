@@ -56,25 +56,12 @@ function cuaca($keyword) {
 
 # require_once('./src/function/search-1.php');
 # require_once('./src/function/download.php');
- require_once('./src/function/random.php');
+# require_once('./src/function/random.php');
 # require_once('./src/function/search-2.php');
 # require_once('./src/function/hard.php');
-if($message['type']=='text') {
-	    if ($command == 'türkiyem') {
 
-        $result = cuaca($options);
-        $balas = array(
-            'replyToken' => $replyToken,
-            'messages' => array(
-                array(
-                    'type' => 'text',
-                    'text' => '🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\nTÜRKIYEM',
-                )
-            )
-        );
-    }
 //show menu, saat join dan command /menu
-if ($type == 'join' || $command == 'kaan') {
+if ($type == 'join' || $command == 'kaan habibo') {
     $text = "KAAN HABIBO SIKER SIZ IZLERSINIZ AMK :D";
     $balas = array(
         'replyToken' => $replyToken,
@@ -89,7 +76,7 @@ if ($type == 'join' || $command == 'kaan') {
 
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == '/hava') {
+	    if ($command == 'kaan') {
 
         $result = cuaca($options);
         $balas = array(
@@ -102,6 +89,18 @@ if($message['type']=='text') {
             )
         );
     }
+}else if ($type == 'join' || $command == 'türkiyem') {
+    $text = "🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n
+TÜRKIYEM";
+    $balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+            array(
+                'type' => 'text',
+                'text' => $text
+            )
+        )
+    );
 }else if($message['type']=='sticker')
 {	
 	$balas = array(
