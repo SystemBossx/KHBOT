@@ -49,7 +49,6 @@ function cuaca($keyword) {
 	$result .= "\n\nSIMDI : ";
 	$result .= $json['weather']['0']['main'];
 	$result .= "\nKAAN HABIBO SIKIYOR KOS YETIS OROSBUNUN DOGURDUGU HAHAHAHHAA ";
-	$result .= "\n\n\n\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n🇹🇷\n";
 	$result .= $json['weather']['0']['description'];
     return $result;
 }
